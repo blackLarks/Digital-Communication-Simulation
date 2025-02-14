@@ -89,13 +89,13 @@ markerSize = 17;
 % Monte Carlo simulation results
 semilogy(ebNoDbRange, bitErrorRate, 'b.', ...
          'MarkerSize', markerSize, ...
-         'DisplayName', 'Monte Carlo Simulation');
+         'DisplayName', 'Simulated BER');
 hold on;
 
 % Theoretical bound
 semilogy(ebNoDbRange, theoreticalBer, 'b-', ...
          'LineWidth', plotLineWidth, ...
-         'DisplayName', 'Theoretical Bound');
+         'DisplayName', 'Theoretical BER');
 
 % Plot aesthetics
 grid on;
@@ -103,7 +103,7 @@ ylim([1e-4 1]);
 xlim([min(ebNoDbRange) max(ebNoDbRange)]);
 xlabel('$E_b/N_0$ (dB)', 'FontSize', 12, 'Interpreter', 'latex');
 ylabel('Bit Error Rate (BER)', 'FontSize', 12, 'Interpreter', 'latex');
-title('QPSK Performance Analysis: Monte Carlo vs Theoretical', ...
+title('QPSK Performance Analysis: Simulated vs Theoretical', ...
       'FontSize', 14, 'Interpreter', 'latex');
 legend('Location', 'southwest', 'FontSize', 10);
 legend('boxoff');
