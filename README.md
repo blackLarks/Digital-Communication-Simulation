@@ -7,3 +7,7 @@ Two engineering-oriented introductory-level blogs are provided:
 1. [Basics](https://www.juncao.net.cn/2025/02/03/Communication-theory/)
 2. [QPSK](https://www.juncao.net.cn/2025/02/14/Communication-simulation/)
 
+# Project
+
+- **Basics**: A simple qpsk digital communication system simulation.
+- **modulationSchemes:** MPSK + SER/BER simulation.
